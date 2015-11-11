@@ -1,0 +1,116 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  background-color: #f6f6f6;
+  width: 10rem;
+  height: 18.25rem;
+}@font-face {font-family: "iconfont";
+  src: url('iconfont.eot'); /* IE9*/
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff') format('woff'), /* chrome、firefox */
+  url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 0.5rem;
+  color: #449cff;
+  /*margin-right: 0.234rem;*/
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.choose-list{
+	width: 100%;
+	background-color: #ffffff;
+	margin-top: 0.562rem;
+}
+.college,
+.subject{
+	margin-left: 0.843rem;
+	line-height: 1.546rem;
+}
+.college{
+	border-bottom: 0.031rem solid #e5e5e5;
+}
+.college>span,
+.subject>span{
+	font-size: 0.4375rem;
+}
+#choose-college select,
+#choose-subject select{
+	background-color: #ffffff;
+	width: 5.15rem;
+	font-size: 0.375rem;
+	-webkit-appearance: none; /*for chrome*/
+	margin-left: 1.4rem;
+	border: none;
+	background: url(../image/down.png) no-repeat right;
+	background-size: 0.375rem 0.2rem;
+}
+#choose-college,
+#choose-subject{
+	display: inline;
+	width: 3.9rem;
+	overflow: hidden;
+
+}
+.bottom input{
+	width: 9.06rem;
+	height: 1.25rem;
+	margin-top: 0.57rem;
+	margin-left: 0.468rem;
+	margin-bottom: 0.57rem;
+	background-color: #19b8ff;
+	border: none;
+	border-radius: 0.15rem;
+	color: #ffffff;
+	font-size: 0.5rem;
+}
+.pie-chart{
+	width: 100%;
+	height: 11.67rem;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.example1{
+	margin-top: 0.671rem;
+	margin-left: 0.844rem;
+}
+.piece1{
+	float: left;
+	width: 0.515rem;
+	height: 0.515rem;
+	background-color: #ffac37;
+	border-radius: 0.16rem;
+}
+.example1 span,
+.example2 span{
+	font-size: 0.375rem;
+	margin-left: 0.25rem;
+}
+.example2{
+	margin-top: 0.33rem;
+	margin-left: 0.844rem;
+}
+.piece2{
+	float: left;
+	width: 0.515rem;
+	height: 0.515rem;
+	background-color: #4399ff;
+	border-radius: 0.16rem;
+}
+canvas{
+	width: 5.7rem;
+	height: 5.7rem;
+	margin-left: 2.1rem;
+	margin-top: 0.28rem;
+}
+
+
+
+
+
+
