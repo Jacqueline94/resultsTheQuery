@@ -20,3 +20,9 @@ var Na = document.getElementsByTagName("span");
 			}
 		};
 	}
+$(document).ready(function() {
+	var $check = $("#bottom");
+	$check.click(function() {
+		location.href = "guake.html";
+	})
+})
