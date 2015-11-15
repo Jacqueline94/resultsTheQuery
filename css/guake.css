@@ -106,7 +106,9 @@ body {
 	width: 10rem;
 	height: 5.7rem;
 }
-
+.highcharts-button{
+	display: none !important;
+}
 
 
 

@@ -26,3 +26,7 @@ $(document).ready(function() {
 		location.href = "guake.html";
 	})
 })
+function change(num){
+	$(".navlist div").removeClass("nav");
+	$($(".navlist div")[num]).addClass("nav");
+}

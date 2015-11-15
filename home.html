@@ -18,9 +18,9 @@
 		</div>
 	</div>
 <div class="navlist">
-	<div class="nav" id="results">期末成绩</div>
-	<div id="examArrangement">考试安排</div>
-	<div id="makeUpExamArrangement">补考安排</div>
+	<div class="nav" id="results" data-con="0">期末成绩</div>
+	<div id="examArrangement" data-con="1">考试安排</div>
+	<div id="makeUpExamArrangement" data-con="2">补考安排</div>
 </div>
 <div class="swiper-container">
 	<div class="swiper-wrapper">
@@ -141,7 +141,20 @@
 <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        paginationClickable: true
+        paginationClickable: true,
+        onSlideChangeStart: function(swiper){
+            // change(info);
+            change(swiper.activeIndex);
+        },
+        onSlideChangeEnd: function(swiper){
+            // change(info);
+            change(swiper.activeIndex);
+        }
     });
+	$(".navlist div").on('tap',function(){
+		var info = $(this).data().con;
+		swiper.slideTo(info, 500, false);
+		change(info);
+	});
 </script>
 </html>
